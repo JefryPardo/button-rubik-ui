@@ -1,0 +1,51 @@
+%button {
+
+  border-radius: 0.625rem;
+  font-family: $fuente;
+  cursor: pointer;
+  margin-right: 0.40rem;
+}
+
+@mixin size-btn($fontSize, $paddingX, $paddingY ) {
+  
+  @extend %button;
+  font-size: $fontSize;
+  padding:$paddingX $paddingY;
+}
+  
+.tc-size {
+
+  &-small {
+  
+    @include size-btn(0.8rem,0.6rem, 1rem);
+  }
+
+  &-medium {
+
+    @include size-btn(1rem,0.8rem, 1.3rem);
+  }
+  
+  &-large {
+    
+    @include size-btn(1.2rem,1rem, 1.5rem);
+  }
+  
+  &-small.tc-button-rounded {
+    
+    border-radius: 50%;
+    @include size-btn(0.8rem,0.6rem, 0.8rem);
+  }
+  
+  &-medium.tc-button-rounded {
+    
+    border-radius: 50%;
+    @include size-btn(1rem, 0.75rem, 1rem);
+  }
+  
+  &-large.tc-button-rounded {
+    
+    border-radius: 50%;
+    @include size-btn(1.2rem,0.9rem, 1.2rem);
+  }
+}
+

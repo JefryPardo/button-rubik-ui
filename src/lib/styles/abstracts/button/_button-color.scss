@@ -1,0 +1,49 @@
+@import '../../theme/default.scss';
+
+@mixin color($backgroundColor, $color, $borderColor, $sombra) {
+    
+    color: $color;
+    background-color: $backgroundColor;
+    border: 2px solid $borderColor;
+    box-shadow: $sombra;
+}
+
+.tc-color {
+
+    &-primary {
+        
+        @include color($primary, $neutroB, $primary, $boxShadow);
+    }
+    
+    &-primary.tc-button-outlined {
+        
+        @include color($neutroB, $primary, $primary, none);
+         &:hover {
+
+            @include color($primary, $neutroB, $primary,none);
+        }
+    }
+    
+    &-primary.tc-button-text {
+        
+        @include color($neutroB, $primary, $neutroB,none);
+        &:hover {
+
+            @include color($primary-opacity, $primary, $neutroB,none);
+        }
+    }
+    
+    &-secondary {
+        
+        @include color($secondary,$neutroB,$secondary,$boxShadow);
+    }
+    
+    &-secondary.tc-button-outlined {
+        
+        @include color($neutroB,$secondary,$secondary,none);
+        &:hover {
+
+            @include color($secondary,$neutroB,$secondary,none);
+        }
+    }
+}
