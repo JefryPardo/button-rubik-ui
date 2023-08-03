@@ -5,6 +5,17 @@
   "keywords": [
     "button","custom","theme"
   ],
+  "homepage": "https://github.com/JefryPardo/button-rubik-ui#readme",
+  "bugs": {
+    "url": "https://github.com/JefryPardo/button-rubik-ui/issues",
+    "email": "jeffryjhoan1996@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jefry Johan Pardo Alzate",
+    "email": "jeffryjhoan1996@gmail.com",
+    "url": "https://jefrypardo.github.io/portafolio-JefryPardo/all"
+  },
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
